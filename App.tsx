@@ -1,11 +1,19 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './src/navigations/StackNavigator';
+
 
 const App = () => {
     return (
-        <View>
-            <Text>Hola Mundo</Text>
-        </View>
+        <NavigationContainer>
+            <StatusBar
+                translucent={true}
+                backgroundColor='rgba(0,0,0,0.1)'
+                barStyle='light-content'
+            />
+            <StackNavigator />
+        </NavigationContainer>
     )
 }
 
