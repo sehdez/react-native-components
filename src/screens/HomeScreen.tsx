@@ -9,7 +9,7 @@ import FlatListMenuItem from '../components/FlatListMenuItem';
 
 const menuItems:MenuItem[] = [
     { name: 'Animation 101', icon: 'cube-outline', component:'Animation101Screen'},
-    { name: 'Animation 102', icon: 'cube-outline', component:''},
+    { name: 'Animation 102', icon: 'cube-outline', component:'Animation102Screen'},
 ]
 
 const HomeScreen = () => {

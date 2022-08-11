@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { Animated, Easing } from 'react-native';
 
 export const useAnimations = () => {
 
-    const opacity = useRef( new Animated.Value(0.4) ).current;
+    const opacity = useRef( new Animated.Value(0) ).current;
     const top = useRef( new Animated.Value(-100) ).current;
 
     const fadeIn = () => {
