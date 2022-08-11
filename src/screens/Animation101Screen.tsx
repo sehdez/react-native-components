@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { View, StyleSheet, Animated, TouchableOpacity, Text, Easing } from 'react-native';
+import React from 'react'
+import { View, StyleSheet, Animated, TouchableOpacity, Text } from 'react-native';
 import { useAnimations } from '../hooks/useAnimations';
 
 const Animation101Screen = () => {

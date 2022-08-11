@@ -24,4 +24,8 @@
     ```
         npm install --save react-native-vector-icons
     ```
+- ### Whatwg-fetch (para correr pruebas con el fetch)
+    ```
+        npm i --dev whatwg-fetch
+    ```
 
