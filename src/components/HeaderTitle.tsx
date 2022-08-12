@@ -5,13 +5,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface Props {
     title:string;
+    noMargin?: boolean
 }
 
-const HeaderTitle = ({ title }: Props) => {
+const HeaderTitle = ({ title, noMargin }: Props) => {
 const { top } = useSafeAreaInsets();
     return(
         <View style={{ 
-            marginTop: top+20,
+            marginTop: (noMargin) ? 0 : top+20,
             marginBottom:20 }}>
             <Text style={styles.title}>{ title }</Text>
         </View>
