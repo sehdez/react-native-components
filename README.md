@@ -24,6 +24,10 @@
     ```
         npm install --save react-native-vector-icons
     ```
+- ### react-native-prompt-android: [Ver guía de instalación](https://www.npmjs.com/package/react-native-prompt-android).
+    ```
+        npm i react-native-prompt-android --save
+    ```
 - ### Whatwg-fetch (para correr pruebas con el fetch)
     ```
         npm i --dev whatwg-fetch
