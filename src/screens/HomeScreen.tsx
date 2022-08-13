@@ -5,26 +5,10 @@ import { styles } from '../theme/appTheme';
 import FlatListMenuItem from '../components/FlatListMenuItem';
 import { menuItems } from '../data/menuItems';
 import HeaderTitle from '../components/HeaderTitle';
+import { ItemSeparator } from '../components/ItemSeparator';
 
 const HomeScreen = () => {
 
-    const Separator = () => {
-        return(
-            <View
-                style={{
-                    borderBottomWidth:1,
-                    borderBottomColor:'#fff',
-                    opacity:0.5,
-                    width:'100%',
-                    marginVertical:5
-                }}
-            >
-
-            </View>
-        )
-    }
-
-    
     return (
         <View style={{
             
@@ -38,7 +22,7 @@ const HomeScreen = () => {
                 keyExtractor = { (item) => item.name }
                 // StickyHeaderComponent={ renderListHeader }
                 ListHeaderComponent={ () => <HeaderTitle  title='Opciones de Menú'  /> }
-                ItemSeparatorComponent = {() =>  <Separator /> }
+                ItemSeparatorComponent = {() =>  <ItemSeparator /> }
             />
         </View>   
     )
