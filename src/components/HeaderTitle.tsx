@@ -4,17 +4,20 @@ import { styles } from '../theme/appTheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 interface Props {
-    title:string;
-    noMargin?: boolean
+    title     :string;
+    noMT?     : boolean;
+    noMB?     : boolean;
+    textAlign?: 'center' | 'right' | 'left'
 }
 
-const HeaderTitle = ({ title, noMargin }: Props) => {
+const HeaderTitle = ({ title, noMT, noMB, textAlign = 'center' }: Props) => {
 const { top } = useSafeAreaInsets();
     return(
         <View style={{ 
-            marginTop: (noMargin) ? 0 : top+20,
-            marginBottom:20 }}>
-            <Text style={styles.title}>{ title }</Text>
+            marginTop: (noMT) ? 0 : top+20,
+            marginBottom:(noMB) ? 0 : 20,
+        }}>
+            <Text style={{ ...styles.title, textAlign }}>{ title }</Text>
         </View>
     )
 }
