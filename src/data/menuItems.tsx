@@ -8,4 +8,6 @@ export const menuItems:MenuItem[] = [
     { name: 'Text Inputs', icon: 'document-text-outline', component:'TextInputScreen'},
     { name: 'Pull to refresh', icon: 'refresh-outline', component:'PullToRefreshScreen'},
     { name: 'Section list', icon: 'list-outline', component:'SectionListScreen'},
+    { name: 'Modal', icon: 'copy-outline', component:'ModalScreen'},
+    { name: 'Infinite Scroll', icon: 'download-outline', component:'InfiniteScrollScreen'},
 ]

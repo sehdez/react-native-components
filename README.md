@@ -33,3 +33,7 @@
         npm i --dev whatwg-fetch
     ```
 
+
+
+## Referencias:
+### [Imagines utilizadas en el infinite Scroll](https://picsum.photos/).
